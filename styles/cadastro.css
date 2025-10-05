@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Lato:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
+}
+
+/* CSS LOGO */
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* CSS LOGIN */
+.Formulario {
+  border: 3px solid #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.Formulario .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form.login,
+form.signup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* CSS LOGIN - INPUT TEXT */
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 10px;
+  outline: none;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #145a32;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 0px #e2e2e2;
+  transition: 0.3s ease;
+}
+
+.field input:focus,
+.field select:focus {
+  background: #f2f2f2;
+  border: 1px solid #145a32;
+  border-radius: 10px;
+}
+
+.field input::placeholder {
+  color: #dddddd;
+}
+
+.field select {
+  appearance: none; /* remove estilo padrão */
+}
+
+/* espaço extra entre botão e link abaixo */
+.field.btn {
+  margin-bottom: 20px;
+}
+
+.link-button {
+  background-color: transparent;
+  border: none;
+  color: #145a32;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  color: #0d3d1f;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #145a32;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0d3d1f;
+}
+
+.login-link,
+.signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* deixa a cor inicial do select igual ao placeholder */
+.field select {
+  appearance: none;
+  color: #000000;
+}
+
+/* enquanto estiver inválido (na opção placeholder) */
+.field select:invalid {
+  color: #dddddd;
+}
+
+/* -------------------------------
+   BOTÃO COM GRADIENTE DESTACADO
+--------------------------------*/
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #348f50 0%,
+    #56b4d3 51%,
+    #348f50 100%
+  );
+  margin: 10px auto;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 25px #b3f0ff;
+}

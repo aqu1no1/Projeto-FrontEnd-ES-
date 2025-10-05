@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Lato:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* faz o conteúdo expandir e empurrar o footer pra baixo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente o conteúdo */
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/*Image estilo*/
+.logo img {
+  width: 80px;
+  height: auto;
+  padding: 10px;
+  display: block;
+}
+
+/*Navbar estilo*/
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar .menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.navbar .menu li a:hover {
+  color: #00ff62;
+}
+
+/*Footer estilo*/
+.footer {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+.footer a {
+  color: #00ff62;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
