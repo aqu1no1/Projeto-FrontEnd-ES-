@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/admin.css" />
+    <script src="/admin.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            src="/images/d76b9ee5-c96d-4de7-bcad-0da6e120a6b1.png"
+            alt="Logo"
+            class="logo-img"
+          />
+        </a>
+      </div>
+
+      <div class="menu">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="/images/book_.png" alt="livro" class="icon" />
+            Guia de Estudos
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Guia de Estudos</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img
+              src="/images/two-way-arrows-line_.png"
+              alt="setas"
+              class="icon"
+            />
+            Conversor
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Tempo</a>
+            <a href="#">Velocidade</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="/images/calculator_.png" alt="calculadora" class="icon" />
+            Calculadora
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Programador</a>
+            <a href="#">Científica</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="/images/profile-circle_.png" alt="usuário" class="icon" />
+            Perfil
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/navBarPages/admin.html">Admin</a>
+            <a href="/login-signup/cadastro.html">Sair</a>
+          </div>
+        </div>
+
+        <div>
+          <a href="navBarPages/about.html">Sobre</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="admin-section">
+      <h1>Bem-vindo à Página de Administração</h1>
+      <p>Aqui você pode gerenciar o cadastro dos usuários.</p>
+
+      <div class="signup-form">
+        <h2>Adicionar Novo Usuário</h2>
+        <form id="userForm">
+          <label for="username">Nome de Usuário:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button type="submit">Adicionar Usuário</button>
+          <button type="button" id="clearFields">Limpar</button>
+        </form>
+      </div>
+
+      <div class="user-controls">
+        <input
+          type="text"
+          id="search"
+          placeholder="Pesquisar por nome ou email..."
+        />
+        <button id="deleteAll">Excluir Todos</button>
+      </div>
+
+      <div class="user-list">
+        <h2>Lista de Usuários</h2>
+
+        <table id="userTable">
+          <thead>
+            <tr>
+              <th>Nome de Usuário</th>
+              <th>Email</th>
+              <th>Data de Cadastro</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <img
+            src="/images/d76b9ee5-c96d-4de7-bcad-0da6e120a6b1.png"
+            alt="Logo"
+            class="logo-img"
+          />
+          <p><strong>Whatsapp:</strong> (65) 98518-0521</p>
+          <p><strong>Email:</strong> suporte@leftcalculator.com</p>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="../images/instagram-circle_.png" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="../images/youtube-with-circle_.png" alt="YouTube"
+            /></a>
+            <a href="#"><img src="../images/facebook_.png" alt="Facebook" /></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>LINKS IMPORTANTES</h4>
+          <ul>
+            <li>
+              <a href="https://github.com/aqu1no1" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mauricio-aquino-b426a9265"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/aqu1no1/Projeto-FrontEnd-ES-"
+                target="_blank"
+                >GitHub do Projeto</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>MENU PRINCIPAL</h4>
+          <ul>
+            <li><a href="../index.html">Página Inicial</a></li>
+            <li><a href="#">Conversor</a></li>
+            <li><a href="#">Calculadora</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="about.html">Sobre Nós</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 LeftCalculator | Todos os direitos reservados</p>
+        <p>Desenvolvido por <strong>LeftCalculator Team</strong></p>
+      </div>
+    </footer>
+  </body>
+</html>

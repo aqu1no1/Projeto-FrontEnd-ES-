@@ -16,5 +16,3 @@ toLogin.addEventListener("click", () => {
 
 loginForm.style.display = "flex";
 signupForm.style.display = "none";
-
-// dwad
