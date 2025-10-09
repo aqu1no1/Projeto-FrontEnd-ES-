@@ -42,7 +42,6 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Tempo</a>
             <a href="#">Velocidade</a>
           </div>
         </div>
@@ -54,7 +53,6 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Programador</a>
             <a href="#">Científica</a>
           </div>
         </div>
@@ -72,14 +70,22 @@
         </div>
 
         <div>
-          <a href="navBarPages/about.html">Sobre</a>
+          <a href="/navBarPages/about.html">Sobre</a>
         </div>
       </div>
     </nav>
 
     <section class="admin-section">
       <h1>Bem-vindo à Página de Administração</h1>
-      <p>Aqui você pode gerenciar o cadastro dos usuários.</p>
+      <p>
+        Esta é a área de administração do sistema, onde é possível cadastrar
+        novos usuários informando o nome e o e-mail. Os dados cadastrados são
+        salvos no Local Storage e exibidos logo abaixo do formulário, junto com
+        a data de envio. Além disso, nesta página você pode pesquisar usuários,
+        limpar os campos do formulário, excluir um item específico ou remover
+        todos os registros da lista. Todo o layout segue o mesmo padrão de
+        estilo da página principal.
+      </p>
 
       <div class="signup-form">
         <h2>Adicionar Novo Usuário</h2>
@@ -89,13 +95,15 @@
 
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
-
-          <button type="submit">Adicionar Usuário</button>
-          <button type="button" id="clearFields">Limpar</button>
+          <div class="form-buttons">
+            <button type="submit">Adicionar Usuário</button>
+            <button type="button" id="clearFields">Limpar</button>
+          </div>
         </form>
       </div>
 
       <div class="user-controls">
+        <h2>Gerenciar Usuários</h2>
         <input
           type="text"
           id="search"

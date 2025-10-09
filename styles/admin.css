@@ -107,40 +107,172 @@ main {
   background-color: #f1f1f1;
 }
 
-/* MOSTRAR MENU AO PASSAR O MOUSE */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/* CONTENT */
 main,
 .admin-section {
   flex: 1;
-  padding: 100px 20px 120px 20px; /* topo, laterais e base */
-  /* 100px de espaço abaixo da navbar e 120px antes do footer */
+  padding: 100px 20px 120px 20px;
   box-sizing: border-box;
 }
 
+.admin-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #196f3d;
+}
+
+.admin-section p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Blocos principais */
 .signup-form,
 .user-list,
 .user-controls {
-  margin-top: 20px;
+  margin: 20px auto;
   background: #f9f9f9;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
 }
 
-button {
-  margin-top: 10px;
-  padding: 6px 12px;
-  cursor: pointer;
+/* Título do formulário */
+.signup-form h2 {
+  margin-bottom: 20px;
+  color: #196f3d;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Rótulos */
+.signup-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Campos de entrada */
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.signup-form input:focus {
+  border-color: #56b4d3;
+  outline: none;
+}
+
+/* Área dos botões */
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.form-buttons button {
+  flex: 1 1 45%;
+  padding: 10px;
   border: none;
-  background-color: #0078d7;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.form-buttons button:hover {
+  background: linear-gradient(90deg, #56b4d3 0%, #348f50 51%, #56b4d3 100%);
+}
+
+/* Lista de usuários */
+.user-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  background: #fff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-list li span {
+  color: #333;
+  font-size: 15px;
+}
+
+.user-list button {
+  background: #e74c3c;
+  border: none;
   color: white;
   border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-button:hover {
-  background-color: #005fa3;
+.user-list button:hover {
+  background: #c0392b;
+}
+
+user-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-controls h2 {
+  margin-bottom: 20px;
+  color: #196f3d;
+  font-size: 32px;
+  text-align: center;
+}
+.user-controls input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.user-controls button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 600;
+  font-size: 16px;
+}
+.user-controls button:hover {
+  background: linear-gradient(90deg, #56b4d3 0%, #348f50 51%, #56b4d3 100%);
 }
 
 .delete-button {
@@ -170,8 +302,15 @@ button:hover {
   border-bottom: 1px solid #ddd;
 }
 
+.user-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #196f3d;
+  font-size: 32px;
+}
+
 .user-list th {
-  background-color: #196f3d;
+  background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
   color: white;
   font-weight: 600;
 }
