@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guia de Estudos</title>
-        <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/guide.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/guide.css" />
     <script src="../script.js" defer></script>
-</head>
-<body>
-
-<nav class="navbar">
+  </head>
+  <body>
+    <nav class="navbar">
       <div class="logo">
         <a href="../index.html">
           <img
-            src="/images/d76b9ee5-c96d-4de7-bcad-0da6e120a6b1.png"
+            src="../images/d76b9ee5-c96d-4de7-bcad-0da6e120a6b1.png"
             alt="Logo"
             class="logo-img"
           />
@@ -24,19 +23,19 @@
       <div class="menu">
         <div class="dropdown">
           <button class="dropbtn">
-            <img src="/images/book_.png" alt="livro" class="icon" />
+            <img src="../images/book_.png" alt="livro" class="icon" />
             Guia de Estudos
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="/navBarPages/guideStudy.html">Guia de Estudos</a>
+            <a href="./guideStudy.html">Guia de Estudos</a>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropbtn">
             <img
-              src="/images/two-way-arrows-line_.png"
+              src="../images/two-way-arrows-line_.png"
               alt="setas"
               class="icon"
             />
@@ -44,214 +43,278 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Velocidade</a>
+            <a href="./conversor.html">Velocidade</a>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropbtn">
-            <img src="/images/calculator_.png" alt="calculadora" class="icon" />
+            <img
+              src="../images/calculator_.png"
+              alt="calculadora"
+              class="icon"
+            />
             Calculadora
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Simples</a>
+            <a href="./calculator.html">Simples</a>
           </div>
         </div>
 
         <div class="dropdown">
           <button class="dropbtn">
-            <img src="/images/profile-circle_.png" alt="usuário" class="icon" />
+            <img
+              src="../images/profile-circle_.png"
+              alt="usuário"
+              class="icon"
+            />
             Perfil
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="/navBarPages/admin.html">Admin</a>
-            <a href="login-signup/cadastro.html">Sair</a>
+            <a href="./admin.html">Admin</a>
+            <a href="../login-signup/cadastro.html">Sair</a>
           </div>
         </div>
 
         <div>
-          <a href="/navBarPages/about.html">Sobre</a>
+          <a href="./about.html">Sobre</a>
         </div>
       </div>
     </nav>
 
-
     <div class="container">
-    <header>
-      <div>
+      <header>
         <h1>Guia Resumido — Matemática</h1>
-      </div>
-      
-    </header>
+      </header>
 
-    <main class="grid">
-      <!-- Funções -->
-      <section id="funcoes" class="card" aria-labelledby="h-funcoes">
-        <h2 id="h-funcoes">Funções Matemáticas </h2>
-        <div class="summary">
-          <strong>Definição:</strong> relação entre dois conjuntos onde cada elemento do domínio tem exatamente um correspondente no contradomínio.
-          <div class="quick" aria-hidden="true">
-            <div class="pill">Domínio</div>
-            <div class="pill">Contradomínio</div>
-            <div class="pill">Imagem</div>
+      <main class="grid">
+        <!-- Funções -->
+        <section id="funcoes" class="card" aria-labelledby="h-funcoes">
+          <h2 id="h-funcoes">Funções Matemáticas</h2>
+          <div class="summary">
+            <strong>Definição:</strong> relação entre dois conjuntos onde cada
+            elemento do domínio tem exatamente um correspondente no
+            contradomínio.
+            <div class="quick" aria-hidden="true">
+              <div class="pill">Domínio</div>
+              <div class="pill">Contradomínio</div>
+              <div class="pill">Imagem</div>
+            </div>
+
+            <h3 style="margin-top: 10px; margin-bottom: 6px">
+              Tipos principais
+            </h3>
+            <ul>
+              <li>
+                <strong>Afim:</strong>
+                <span class="formula">f(x) = a·x + b</span> — reta. Crescente se
+                a&gt;0, decrescente se a&lt;0.
+              </li>
+              <li>
+                <strong>Quadrática:</strong>
+                <span class="formula">f(x) = a·x² + b·x + c</span> — parábola.
+                Vértice, eixo de simetria e discriminante Δ definem raízes e
+                formato.
+              </li>
+              <li>
+                <strong>Exponencial:</strong>
+                <span class="formula">f(x) = a^x</span> — crescimento ou
+                decaimento dependendo de a.
+              </li>
+              <li>
+                <strong>Logarítmica:</strong>
+                <span class="formula">f(x) = log_a(x)</span> — inversa da
+                exponencial.
+              </li>
+              <li>
+                <strong>Trigonométricas:</strong> seno, cosseno (período 2π) —
+                funções periódicas com amplitude e período.
+              </li>
+            </ul>
+
+            <h4 style="margin-top: 10px">Dica rápida</h4>
+            <p style="margin: 0">
+              Para estudar gráficos: identifique domínio, imagem, zeros,
+              monotonia (cresce/decresce) e pontos notáveis (vértice, assíntota,
+              período).
+            </p>
+          </div>
+        </section>
+
+        <!-- Unidades de medida -->
+        <section id="unidades" class="card" aria-labelledby="h-unidades">
+          <h2 id="h-unidades">Unidades de Medida</h2>
+          <div class="summary">
+            <strong>Conceito:</strong> toda grandeza física tem uma unidade
+            (comprimento, área, volume, massa, tempo, velocidade, etc.). Saber
+            converter é fundamental.
+            <h3 style="margin-top: 10px">Exemplos e conversões</h3>
+            <ul>
+              <li>
+                <strong>Comprimento:</strong> metro (m). Ex.: 1 km = 1000 m; 1
+                cm = 0,01 m.
+              </li>
+              <li>
+                <strong>Área:</strong> metro quadrado (m²). Conversão entre km²,
+                hm², dam², m², dm², cm², mm² (cada passo ×100 ou ÷100).
+              </li>
+              <li>
+                <strong>Volume:</strong> metro cúbico (m³). Relação direta com
+                área da base × altura.
+              </li>
+              <li>
+                <strong>Velocidade:</strong> comum km/h; SI = m/s. Conversão: 1
+                m/s = 3,6 km/h.
+              </li>
+            </ul>
+            <p style="margin-top: 8px">
+              Regra prática: para <em>comprimento</em> usa potências de 10; para
+              <em>área</em> e <em>volume</em> elevar o fator da conversão ao
+              quadrado ou cúbico respectivamente.
+            </p>
+          </div>
+        </section>
+
+        <!-- Geometria Plana -->
+        <section id="geometria-plana" class="card" aria-labelledby="h-geo">
+          <h2 id="h-geo">Geometria Plana — Triângulos</h2>
+          <div class="summary">
+            <strong>Classificação por lados:</strong> equilátero (3 iguais),
+            isósceles (2 iguais), escaleno (todos diferentes).<br />
+            <strong>Classificação por ângulos:</strong> acutângulo, retângulo,
+            obtusângulo.
+
+            <h3 style="margin-top: 10px">Teoremas e pontos notáveis</h3>
+            <ul>
+              <li>
+                <strong>Lei angular:</strong> a + b + c = 180° (soma dos ângulos
+                internos).
+              </li>
+              <li>
+                <strong>Medianas, bissetriz e altura:</strong> medianas se
+                encontram no baricentro; bissetriz no incentro; mediatriz no
+                circuncentro; alturas no ortocentro.
+              </li>
+              <li>
+                <strong>Pontos de encontro:</strong> baricentro (interseção
+                medianas), incentro (interseção bissetrizes), circuncentro
+                (interseção mediatrizes), ortocentro (interseção alturas).
+              </li>
+            </ul>
+            <p style="margin: 0">
+              Desenhe sempre o triângulo e marque lados/ângulos conhecidos —
+              facilita aplicar teoremas e ver relações de simetria.
+            </p>
+          </div>
+        </section>
+
+        <!-- Geometria Espacial -->
+        <section id="volumes" class="card" aria-labelledby="h-volumes">
+          <h2 id="h-volumes">Geometria Espacial — Volumes</h2>
+          <div class="summary">
+            <strong>Conceito:</strong> sólidos em 3D — prismas, cilindros,
+            cones, pirâmides, esferas, etc.
+            <h3 style="margin-top: 10px">Fórmulas principais</h3>
+            <ul>
+              <li>
+                <strong>Prismas e cilindros:</strong>
+                <span class="formula">V = A_b × h</span>
+              </li>
+              <li>
+                <strong>Cones e pirâmides:</strong>
+                <span class="formula">V = (A_b × h) / 3</span>
+              </li>
+              <li>
+                <strong>Esfera:</strong>
+                <span class="formula">V = 4/3 · π · R³</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Áreas -->
+        <section id="areas" class="card" aria-labelledby="h-areas">
+          <h2 id="h-areas">Áreas de Figuras Planas</h2>
+          <div class="summary">
+            <strong>Área:</strong> medida da superfície de uma figura.
+            <h3 style="margin-top: 10px">Fórmulas comuns</h3>
+            <ul>
+              <li><strong>Quadrado:</strong> A = l²</li>
+              <li><strong>Retângulo:</strong> A = B × h</li>
+              <li><strong>Triângulo:</strong> A = (b × h) / 2</li>
+              <li><strong>Trapézio:</strong> A = ((B + b) × h) / 2</li>
+              <li><strong>Losango:</strong> A = (D × d) / 2</li>
+              <li><strong>Círculo:</strong> A = π · R²</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-section">
+            <img
+              src="../images/d76b9ee5-c96d-4de7-bcad-0da6e120a6b1.png"
+              alt="Logo"
+              class="logo-img"
+            />
+            <p><strong>Whatsapp:</strong> (65) 98518-0521</p>
+            <p><strong>Email:</strong> suporte@leftcalculator.com</p>
+            <div class="social-icons">
+              <a href="#"
+                ><img src="../images/instagram-circle_.png" alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img src="../images/youtube-with-circle_.png" alt="YouTube"
+              /></a>
+              <a href="#"
+                ><img src="../images/facebook_.png" alt="Facebook"
+              /></a>
+            </div>
           </div>
 
-          <h3 style="margin-top:10px;margin-bottom:6px">Tipos principais</h3>
-          <ul>
-            <li><strong>Afim:</strong> <span class="formula">f(x) = a·x + b</span> — reta. Crescente se a&gt;0, decrescente se a&lt;0.</li>
-            <li><strong>Quadrática:</strong> <span class="formula">f(x) = a·x² + b·x + c</span> — parábola. Vértice, eixo de simetria e discriminante Δ definem raízes e formato.</li>
-            <li><strong>Exponencial:</strong> <span class="formula">f(x) = a^x</span> — crescimento ou decaimento dependendo de a.</li>
-            <li><strong>Logarítmica:</strong> <span class="formula">f(x) = log_a(x)</span> — inversa da exponencial.</li>
-            <li><strong>Trigonométricas:</strong> seno, cosseno (período 2π) — funções periódicas com amplitude e período.</li>
-          </ul>
+          <div class="footer-section">
+            <h4>LINKS IMPORTANTES</h4>
+            <ul>
+              <li>
+                <a href="https://github.com/aqu1no1" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mauricio-aquino-b426a9265"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/aqu1no1/Projeto-FrontEnd-ES-"
+                  target="_blank"
+                  >GitHub do Projeto</a
+                >
+              </li>
+            </ul>
+          </div>
 
-          <h4 style="margin-top:10px">Dica rápida</h4>
-          <p style="margin:0">Para estudar gráficos: identifique domínio, imagem, zeros, monotonia (cresce/decresce) e pontos notáveis (vértice, assíntota, período).</p>
-        </div>
-      </section>
-
-      <!-- Unidades de medida -->
-      <section id="unidades" class="card" aria-labelledby="h-unidades">
-        <h2 id="h-unidades"> Unidades de Medida</h2>
-        <div class="summary">
-          <strong>Conceito:</strong> toda grandeza física tem uma unidade (comprimento, área, volume, massa, tempo, velocidade, etc.). Saber converter é fundamental.
-          <h3 style="margin-top:10px">Exemplos e conversões</h3>
-          <ul>
-            <li><strong>Comprimento:</strong> metro (m). Ex.: 1 km = 1000 m; 1 cm = 0,01 m.</li>
-            <li><strong>Área:</strong> metro quadrado (m²). Conversão entre km², hm², dam², m², dm², cm², mm² (cada passo x100 ou ÷100).</li>
-            <li><strong>Volume:</strong> metro cúbico (m³). Relação direta com área da base × altura.</li>
-            <li><strong>Velocidade:</strong> comum km/h; SI = m/s. Conversão: 1 m/s = 3,6 km/h.</li>
-          </ul>
-          <p style="margin-top:8px">Regra prática: para <em>comprimento</em> usa potências de 10; para <em>área</em> e <em>volume</em> elevar o fator da conversão ao quadrado ou cúbico respectivamente.</p>
-        </div>
-      </section>
-
-      <!-- Geometria Plana: Triângulos -->
-      <section id="geometria-plana" class="card" aria-labelledby="h-geo">
-        <h2 id="h-geo"> Geometria Plana — Triângulos</h2>
-        <div class="summary">
-          <strong>Classificação por lados:</strong> equilátero (3 iguais), isósceles (2 iguais), escaleno (todos diferentes).<br>
-          <strong>Classificação por ângulos:</strong> acutângulo, retângulo, obtusângulo.
-
-          <h3 style="margin-top:10px">Teoremas e pontos notáveis</h3>
-          <ul>
-            <li><strong>Lei angular:</strong> a + b + c = 180° (soma dos ângulos internos).</li>
-            <li><strong>Medianas, bissetriz e altura:</strong> medianas se encontram no baricentro; bissetriz no incentro; mediatriz no circuncentro; alturas no ortocentro.</li>
-            <li><strong>Pontos de encontro:</strong> baricentro (interseção medianas), incentro (interseção bissetrizes), circuncentro (interseção mediatrizes), ortocentro (interseção alturas).</li>
-          </ul>
-
-          <h4 style="margin-top:8px">Dicas úteis</h4>
-          <p style="margin:0">Desenhe sempre o triângulo e marque lados/ângulos conhecidos — facilita aplicar teoremas e ver relações de simetria.</p>
-        </div>
-      </section>
-
-      <!-- Geometria Espacial / Volumes -->
-      <section id="volumes" class="card" aria-labelledby="h-volumes">
-        <h2 id="h-volumes"> Geometria Espacial — Volumes</h2>
-        <div class="summary">
-          <strong>Conceito:</strong> sólidos em 3D — prismas, cilindros, cones, pirâmides, esferas, etc. Volume mede espaço ocupado.
-
-          <h3 style="margin-top:10px">Fórmulas principais</h3>
-          <ul>
-            <li><strong>Prismas e cilindros:</strong> <span class="formula">V = A_b × h</span> (A_b = área da base)</li>
-            <li><strong>Cones e pirâmides:</strong> <span class="formula">V = (A_b × h) / 3</span></li>
-            <li><strong>Esfera:</strong> <span class="formula">V = 4/3 · π · R³</span></li>
-          </ul>
-
-          <p style="margin-top:8px">Princípio de Cavalieri (intuição): sólidos com mesmas alturas e áreas transversais correspondentes têm volumes iguais — útil para comparações e demonstrações.</p>
-        </div>
-      </section>
-
-      <!-- Áreas e figuras planas -->
-      <section id="areas" class="card" aria-labelledby="h-areas">
-        <h2 id="h-areas"> Áreas de Figuras Planas</h2>
-        <div class="summary">
-          <strong>Área:</strong> medida da superfície de uma figura. Não confundir com perímetro (medida do contorno).
-
-          <h3 style="margin-top:10px">Fórmulas comuns</h3>
-          <ul>
-            <li><strong>Quadrado:</strong> <span class="formula">A = l²</span></li>
-            <li><strong>Retângulo:</strong> <span class="formula">A = B × h</span></li>
-            <li><strong>Triângulo:</strong> <span class="formula">A = (b × h) / 2</span></li>
-            <li><strong>Trapézio:</strong> <span class="formula">A = ((B + b) × h) / 2</span></li>
-            <li><strong>Losango/Rombo:</strong> <span class="formula">A = (D × d) / 2</span></li>
-            <li><strong>Círculo:</strong> <span class="formula">A = π · R²</span></li>
-          </ul>
-
-          <h4 style="margin-top:8px">Métodos de cálculo</h4>
-          <ul>
-            <li><strong>Direta:</strong> aplicar fórmula conhecida.</li>
-            <li><strong>Partição:</strong> dividir a figura em partes (triângulos, retângulos) e somar áreas.</li>
-            <li><strong>Exclusão:</strong> calcular área do contorno maior e subtrair área interna a remover.</li>
-          </ul>
-
-          <p style="margin-top:6px">Sempre verifique unidades (m², cm²...) e converta antes de operar.</p>
-        </div>
-      </section>
-    </main>
-
-     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <img
-            src="/images/d76b9ee5-c96d-4de7-bcad-0da6e120a6b1.png"
-            alt="Logo"
-            class="logo-img"
-          />
-          <p><strong>Whatsapp:</strong> (65) 98518-0521</p>
-          <p><strong>Email:</strong> suporte@leftcalculator.com</p>
-          <div class="social-icons">
-            <a href="#"
-              ><img src="../images/instagram-circle_.png" alt="Instagram"
-            /></a>
-            <a href="#"
-              ><img src="../images/youtube-with-circle_.png" alt="YouTube"
-            /></a>
-            <a href="#"><img src="../images/facebook_.png" alt="Facebook" /></a>
+          <div class="footer-section">
+            <h4>MENU PRINCIPAL</h4>
+            <ul>
+              <li><a href="../index.html">Página Inicial</a></li>
+              <li><a href="./conversor.html">Conversor</a></li>
+              <li><a href="./calculator.html">Calculadora</a></li>
+              <li><a href="./guideStudy.html">Guia de Estudos</a></li>
+              <li><a href="./about.html">Sobre Nós</a></li>
+            </ul>
           </div>
         </div>
 
-        <div class="footer-section">
-          <h4>LINKS IMPORTANTES</h4>
-          <ul>
-            <li>
-              <a href="https://github.com/aqu1no1" target="_blank">GitHub</a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/mauricio-aquino-b426a9265"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/aqu1no1/Projeto-FrontEnd-ES-"
-                target="_blank"
-                >GitHub do Projeto</a
-              >
-            </li>
-          </ul>
+        <div class="footer-bottom">
+          <p>© 2024 LeafCalculator | Todos os direitos reservados</p>
+          <p>Desenvolvido por <strong>LeafCalculator Team</strong></p>
         </div>
-
-        <div class="footer-section">
-          <h4>MENU PRINCIPAL</h4>
-          <ul>
-            <li><a href="../index.html">Página Inicial</a></li>
-            <li><a href="conversor.html">Conversor</a></li>
-            <li><a href="calculator.html">Calculadora</a></li>
-            <li><a href="guideStudy.html">Guia de Estudos</a></li>
-            <li><a href="about.html">Sobre Nós</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2024 LeftCalculator | Todos os direitos reservados</p>
-        <p>Desenvolvido por <strong>LeftCalculator Team</strong></p>
-      </div>
-    </footer>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
