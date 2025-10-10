@@ -18,7 +18,7 @@ body {
   min-height: 100vh;
 }
 
-/* NAVBAR */
+/* navbar */
 .navbar {
   width: 100%;
   height: 80px;
@@ -30,20 +30,20 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-/* LOGO */
+/* logo */
 .logo-img {
   width: 70px;
   height: auto;
 }
 
-/* MENU */
+/* menu */
 .menu {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* LINKS E BOTÕES */
+/* link e btn */
 .menu a,
 .dropbtn {
   color: white;
@@ -64,7 +64,7 @@ body {
   border-radius: 6px;
 }
 
-/* DROPDOWN */
+/* dropdown */
 .dropdown {
   position: relative;
 }
@@ -98,17 +98,7 @@ body {
   display: block;
 }
 
-/* CONTEÚDO */
-.container {
-  flex: 1;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-  font-family: "Lato", sans-serif;
-  color: #333;
-  text-align: center;
-}
-/* FOOTER */
+/* footer */
 .footer {
   background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
   color: #fff;
@@ -185,7 +175,7 @@ body {
   color: #fff;
 }
 
-/* ÍCONES NAS OPÇÕES */
+/* icones */
 .icon {
   width: 20px;
   height: 20px;
@@ -194,7 +184,7 @@ body {
   filter: brightness(0) invert(1);
 }
 
-/* BOTÕES DO MENU */
+/* btn menu */
 .dropbtn,
 .menu a {
   display: flex;
@@ -202,7 +192,7 @@ body {
   gap: 8px;
 }
 
-/* PERFIL */
+/* perfil */
 .perfil {
   display: flex;
   align-items: center;
@@ -220,87 +210,78 @@ body {
   color: #f1f1f1;
 }
 
-/* ABOUT */
-
-.about-section {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
+/* calculadora */
+#calc {
+  width: 400px;
+  padding: 0.5em;
+  background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.about-section h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #348f50;
-}
-.about-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  justify-content: center;
+  margin: 20px auto;
 }
 
-.contact-section {
-  padding: 40px 20px;
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-.contact-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #348f50;
-}
-.contact-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 10px;
+#calc h3 {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #000;
 }
 
-.purpose-section {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-}
-.purpose-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #348f50;
-}
-.purpose-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 10px;
+#operations {
+  text-align: right;
 }
 
-.project-section {
-  padding: 40px 20px;
-  background-color: #f1f1f1;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+#previous-operation {
+  color: #000;
+  font-size: 1.2em;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+  min-height: 1.6em;
 }
-.project-section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #348f50;
+
+#current-operation {
+  min-height: 1.6em;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 0.2em;
+  overflow-wrap: break-word;
 }
-.project-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 10px;
+
+#buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
 }
-.project-section a {
-  color: #348f50;
-  text-decoration: none;
-  font-weight: bold;
+
+#buttons-container button {
+  border: 1px solid transparent;
+  border-radius: 0;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #dbdbdb;
+  cursor: pointer;
 }
-.project-section a:hover {
-  text-decoration: underline;
+
+#buttons-container .number {
+  background-color: #f3f3f3;
+}
+
+#buttons-container button:hover {
+  background-color: #bababa;
+  border-color: #999;
+}
+
+#buttons-container #equal-btn {
+  grid-column: span 2;
+  background-color: #4fcc75;
+}
+
+#buttons-container #equal-btn:hover {
+  grid-column: span 2;
+  background-color: #225c34;
 }

@@ -13,7 +13,7 @@ body {
   background: linear-gradient(90deg, #348f50 0%, #56b4d3 51%, #348f50 100%);
 }
 
-/* CSS LOGO */
+/* logo */
 .logo img {
   width: 150px;
   height: auto;
@@ -21,7 +21,6 @@ body {
   margin: 0 auto;
 }
 
-/* CSS LOGIN */
 .Formulario {
   border: 3px solid #fff;
   padding: 20px;
@@ -49,7 +48,7 @@ form.signup {
   gap: 15px;
 }
 
-/* CSS LOGIN - INPUT TEXT */
+/* login */
 .field {
   display: flex;
   flex-direction: column;
@@ -86,10 +85,9 @@ form.signup {
 }
 
 .field select {
-  appearance: none; /* remove estilo padrão */
+  appearance: none;
 }
 
-/* espaço extra entre botão e link abaixo */
 .field.btn {
   margin-bottom: 20px;
 }
@@ -136,20 +134,15 @@ form.signup {
   color: #333;
 }
 
-/* deixa a cor inicial do select igual ao placeholder */
 .field select {
   appearance: none;
   color: #000000;
 }
-
-/* enquanto estiver inválido (na opção placeholder) */
 .field select:invalid {
   color: #dddddd;
 }
 
-/* -------------------------------
-   BOTÃO COM GRADIENTE DESTACADO
---------------------------------*/
+/* btn */
 .btn-grad {
   background-image: linear-gradient(
     to right,

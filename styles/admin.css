@@ -110,7 +110,7 @@ main {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* CONTENT */
+/* conteudo */
 main,
 .admin-section {
   flex: 1;
@@ -132,7 +132,6 @@ main,
   color: #555;
 }
 
-/* Blocos principais */
 .signup-form,
 .user-list,
 .user-controls {
@@ -145,7 +144,6 @@ main,
   max-width: 600px;
 }
 
-/* Título do formulário */
 .signup-form h2 {
   margin-bottom: 20px;
   color: #196f3d;
@@ -153,7 +151,6 @@ main,
   font-size: 24px;
 }
 
-/* Rótulos */
 .signup-form label {
   display: block;
   margin-bottom: 5px;
@@ -163,7 +160,6 @@ main,
   text-align: left;
 }
 
-/* Campos de entrada */
 .signup-form input {
   width: 100%;
   padding: 10px;
@@ -179,7 +175,6 @@ main,
   outline: none;
 }
 
-/* Área dos botões */
 .form-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -417,7 +412,7 @@ user-controls {
   height: 20px;
   vertical-align: middle;
   margin-right: 8px;
-  filter: brightness(0) invert(1); /* deixa branco se a imagem for escura */
+  filter: brightness(0) invert(1);
 }
 
 /* BOTÕES DO MENU */
@@ -425,7 +420,7 @@ user-controls {
 .menu a {
   display: flex;
   align-items: center;
-  gap: 8px; /* espaço entre ícone e texto */
+  gap: 8px;
 }
 
 /* PERFIL */

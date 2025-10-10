@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina Admin</title>
+    <title>Calculadora</title>
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="../styles/admin.css" />
-    <script src="/admin.js" defer></script>
+    <link rel="stylesheet" href="../styles/calculator.css" />
+    <script src="../calc.js" defer></script>
   </head>
   <body>
     <nav class="navbar">
@@ -29,7 +29,7 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Guia de Estudos</a>
+            <a href="/navBarPages/guideStudy.html">Guia de Estudos</a>
           </div>
         </div>
 
@@ -44,7 +44,7 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Velocidade</a>
+            <a href="/navBarPages/conversor.html">Velocidade</a>
           </div>
         </div>
 
@@ -72,64 +72,39 @@
         </div>
 
         <div>
-          <a href="/navBarPages/about.html">Sobre</a>
+          <a href="navBarPages/about.html">Sobre</a>
         </div>
       </div>
     </nav>
 
-    <section class="admin-section">
-      <h1>Bem-vindo à Página de Administração</h1>
-      <p>
-        Esta é a área de administração do sistema, onde é possível cadastrar
-        novos usuários informando o nome e o e-mail. Os dados cadastrados são
-        salvos no Local Storage e exibidos logo abaixo do formulário, junto com
-        a data de envio. Além disso, nesta página você pode pesquisar usuários,
-        limpar os campos do formulário, excluir um item específico ou remover
-        todos os registros da lista. Todo o layout segue o mesmo padrão de
-        estilo da página principal.
-      </p>
-
-      <div class="signup-form">
-        <h2>Adicionar Novo Usuário</h2>
-        <form id="userForm">
-          <label for="username">Nome de Usuário:</label>
-          <input type="text" id="username" name="username" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <div class="form-buttons">
-            <button type="submit">Adicionar Usuário</button>
-            <button type="button" id="clearFields">Limpar</button>
-          </div>
-        </form>
+    <div id="calc">
+      <h3>Calculadora</h3>
+      <div id="operations">
+        <div id="previous-operation"></div>
+        <div id="current-operation"></div>
       </div>
-
-      <div class="user-controls">
-        <h2>Gerenciar Usuários</h2>
-        <input
-          type="text"
-          id="search"
-          placeholder="Pesquisar por nome ou email..."
-        />
-        <button id="deleteAll">Excluir Todos</button>
+      <div id="buttons-container">
+        <button>CE</button>
+        <button>C</button>
+        <button>DEL</button>
+        <button>/</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button>*</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button>-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button>+</button>
+        <button class="number">0</button>
+        <button class="number">.</button>
+        <button id="equal-btn">=</button>
       </div>
-
-      <div class="user-list">
-        <h2>Lista de Usuários</h2>
-
-        <table id="userTable">
-          <thead>
-            <tr>
-              <th>Nome de Usuário</th>
-              <th>Email</th>
-              <th>Data de Cadastro</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody id="userTableBody"></tbody>
-        </table>
-      </div>
-    </section>
+    </div>
 
     <footer class="footer">
       <div class="footer-container">
@@ -179,9 +154,9 @@
           <h4>MENU PRINCIPAL</h4>
           <ul>
             <li><a href="../index.html">Página Inicial</a></li>
-            <li><a href="#">Conversor</a></li>
-            <li><a href="#">Calculadora</a></li>
-            <li><a href="#">Perfil</a></li>
+            <li><a href="conversor.html">Conversor</a></li>
+            <li><a href="calculator.html">Calculadora</a></li>
+            <li><a href="guideStudy.html">Guia de Estudos</a></li>
             <li><a href="about.html">Sobre Nós</a></li>
           </ul>
         </div>
